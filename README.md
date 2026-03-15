@@ -145,10 +145,10 @@ curl http://localhost:8080/metrics
 在 `docker-compose.yml` 中的 `gateway` 服务添加环境变量：
 
 ```yaml
-environment:
-  http_proxy: "http://ip_addr:port"
-  https_proxy: "http://ip_addr:port"
-  no_proxy: "localhost,127.0.0.1,.local"
+    environment:
+      - http_proxy=http://ip_addr:port
+      - https_proxy=http://ip_addr:port
+      - no_proxy=localhost,127.0.0.1,.local
 ```
 
 其中：
