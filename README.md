@@ -567,6 +567,7 @@ docker exec openresty-gw openresty -t
 | [degradation-module-test-report.md](docs/degradation-module-test-report.md) | 降级模块测试报告，验证限流/熔断触发时的降级响应 |
 | [monitor-module-test-report.md](docs/monitor-module-test-report.md) | 监控模块测试报告，验证Prometheus指标采集的准确性 |
 | [logger-module-test-report.md](docs/logger-module-test-report.md) | 日志模块测试报告，验证JSON日志输出和敏感信息脱敏 |
+| [gateway-load-test-report.md](docs/gateway-load-test-report.md.md) | 网关压力测试报告 |
 
 
 ---
