@@ -542,3 +542,31 @@ docker exec openresty-gw openresty -t
 ```
 
 ---
+
+## 10. 文档链接索引
+
+### 10.1 架构设计文档
+
+| 文档 | 作用 |
+| --- | --- |
+| [gateway-module-summary.md](docs/gateway-module-summary.md) | 网关整体架构设计方案总结，包含各模块功能概览和交互流程 |
+| [router-module-design.md](docs/architecture-design/router-module-design.md) | Router模块详细设计，说明请求路由、认证注入、URI重写等核心逻辑 |
+| [stability-module-design.md](docs/architecture-design/stability-module-design.md) | Stability模块整体设计，协调限流、熔断、降级三个子模块 |
+| [rate-limiter-module-design.md](docs/architecture-design/rate-limiter-module-design.md) | 限流模块详细设计，包含3维度漏桶算法实现原理 |
+| [stability-submodule-design.md](docs/architecture-design/stability-submodule-design.md) | 熔断器和降级模块详细设计，包含3态状态机和降级策略 |
+| [monitor-module-design.md](docs/architecture-design/monitor-module-design.md) | 监控模块设计，说明Prometheus指标采集和暴露机制 |
+| [logger-module-design.md](docs/architecture-design/logger-module-design.md) | 日志模块设计，包含JSON结构化日志和敏感信息脱敏规则 |
+
+### 10.2 测试报告文档
+
+| 文档 | 作用 |
+| --- | --- |
+| [router-module-test-report.md](docs/router-module-test-report.md) | Router模块功能测试报告，验证路由转发、认证注入、URI重写等功能 |
+| [rate-limiter-module-test-report.md](docs/rate-limiter-module-test-report.md) | 限流模块测试报告，验证3维度漏桶算法的限流效果 |
+| [circuit-breaker-module-test-report.md](docs/circuit-breaker-module-test-report.md) | 熔断器模块测试报告，验证3态状态机和故障恢复机制 |
+| [degradation-module-test-report.md](docs/degradation-module-test-report.md) | 降级模块测试报告，验证限流/熔断触发时的降级响应 |
+| [monitor-module-test-report.md](docs/monitor-module-test-report.md) | 监控模块测试报告，验证Prometheus指标采集的准确性 |
+| [logger-module-test-report.md](docs/logger-module-test-report.md) | 日志模块测试报告，验证JSON日志输出和敏感信息脱敏 |
+
+
+---
