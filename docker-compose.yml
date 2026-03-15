@@ -13,9 +13,6 @@ services:
       - ZERION_API_KEY=${ZERION_API_KEY:-test_zerion_key}
       - COINGECKO_API_KEY=${COINGECKO_API_KEY:-test_coingecko_key}
       - ALCHEMY_API_KEY=${ALCHEMY_API_KEY:-test_alchemy_key}
-      - http_proxy=http://192.168.3.38:10809
-      - https_proxy=http://192.168.3.38:10809
-      - no_proxy=localhost,127.0.0.1,.local
     volumes:
       - ./logs:/usr/local/openresty/nginx/logs
     restart: unless-stopped
